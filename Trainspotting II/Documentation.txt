@@ -1,0 +1,9 @@
+What is the purpose of each method in the monitor?
+*	The purpose of our methods is to replicate the methods in the semaphores that we used.
+That means that tryEnter, enter and leave corresponds to tryAcquire, acquire and release.
+
+They are still as expressive as semaphores but offers more flexibility.
+
+How many conditional variables, if any, are needed in your solution? Justify your answer.
+*	One conditional variable is used just because we are only dealing with two threads and
+there's only two options for each sections of interest. This used to enqueue and dequeue processes.
